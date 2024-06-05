@@ -9,8 +9,6 @@ import { motion } from 'framer-motion'
 import { useEffect } from 'react'
 
 import llama from './assets/llama.jpg'
-import wLogo from './assets/w-logo.jpg'
-import xLogo from './assets/x-logo.jpg'
 
 function App() {
   const [data, setData] = useState('')
@@ -48,7 +46,7 @@ function App() {
         setLoading(false)
         Swal.fire({
           position: "top-center",
-          title: 'Success!',
+          title: 'Sukses!',
           text: 'Saya Menemukan Hasilnya',
           icon: 'success',
           showConfirmButton: false,
@@ -92,13 +90,10 @@ function App() {
         <div className='w-24 h-24 rounded-full overflow-hidden mr-4'>
           <img src={llama} alt="Llama AI" className='w-full h-full object-cover' />
         </div>
-        <img src={xLogo} alt="X Symbol" className='w-12 h-12 mr-4' />
-        <div className='w-24 h-24 rounded-full overflow-hidden mr-4'>
-        <img src={wLogo} alt="W Symbol" className='w-full h-full object-cover' />
-        </div>
+
       </div>
-      <h1 className='text-center text-4xl text-white'>AI LLAMA | WAHYU</h1>
-      <h3 className='text-center text-1xl text-indigo-500'>Halo Saya AI yang sudah terintergrasi oleh model LLAMA yang sangat cepat dan akurat melebihi chatgpt 4</h3>
+      <h1 className='text-center text-4xl text-white'>AI LLAMA APP</h1>
+      <h3 className='text-center text-1xl text-indigo-500'>Halo Saya AI yang sudah terintergrasi oleh model LLAMA 3 yang sangat cepat</h3>
       <h3 className='text-center text-1xl text-indigo-500'>Jika Anda Membutuhkan masalah saya akan memberikan solusinya</h3>
       <div className='flex flex-col gap-4 py-4 w-full'>
 
