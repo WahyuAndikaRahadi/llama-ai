@@ -10,6 +10,7 @@ import { useEffect } from 'react'
 
 import llama from './assets/llama.jpg'
 
+
 function App() {
   const [data, setData] = useState('')
   const [loading, setLoading] = useState(false)
